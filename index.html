@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Challenge-Desafio 2-Logica</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  
+  <video src="f4.mp4" autoplay="true" muted="true" loop="true" poster="video.mp4"></video>
+    
+  <header>
+        <img src="Img/Logo.png" alt="Logo-Alura"> 
+    </header>
+    
+    <main>
+        
+      <div class="pantallaPrincipal">
+        <button id="boton1" class="boton-1">Iniciar juego</button>
+        <button id="boton2"class="boton-2">Agregar nueva palabra</button>
+      </div>
+
+      
+      <div class="tablero hide">
+          <div id="canvas-container" class="canvas-container">
+            <canvas width="600" height="400" id="ahorcado" class="canvas"></canvas>
+          </div>
+        
+          <div class="contenedor-letras">
+            <div class="palabrasCorrectas">
+             <span id="letra-guiones" class="letra-guiones"></span>  
+            </div>
+            <div class="palabrasEquivocadas"> 
+              <span id="palabrasEquivocadas" class="palabras-Equivocadas"></span>  
+            </div>    
+          </div>
+
+          <input class="mobile" id="mobile" placeholder="Tocar para mostrar teclado" autofocus>
+          
+          <section id= "pantalla-secundaria" class="seccion-2">
+            <button class="boton-3" id="boton3">
+              <a>Empezar de Nuevo</a>
+            </button>
+            <button class="boton-4" id="boton4">
+              <a>Empezar de Nuevo</a>
+            </button>
+            <button class="boton-5" id="boton5">
+              <a>Desistir</a>
+            </button>
+            <button class="boton-6" id="boton6">
+              <a>Salir</a>
+            </button>  
+          </section>
+        </div>
+
+        <div>
+          <div class="form-container hide" id="form-container">
+            
+            <input type="text" class="input-main" id="input-main" cols="50" rows="10" placeholder="Ingrese una palabra">
+            <input type="submit" class="palabra-send" id="palabra-send" value="Guardar">
+            <button class="cancel-btn" id="cancel">cancelar</button>
+            
+            <div id="style" class="advertencia">
+              <p>Máx 8 letras</p>
+            </div> 
+          
+          </div>
+        </div>
+
+        
+    </main> 
+    
+    <footer><p>Created By Gisel Padilla and ORACLE One + Alura LATAM ©2022</p></footer>
+     
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/ahorcado.js"></script>
+</body>
+</html>
+
